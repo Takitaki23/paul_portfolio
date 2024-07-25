@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+  
+body, html {
+    height: 100%;
+}
+/* Add this to your css/style.css file */
+body {
+    padding-top: 56px; /* Adjust this value to the height of your navbar */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add this to your css/style.css file */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Prominent shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+ /* Custom scrollbar */
+ ::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+   
+    background: #377dd8; 
+    border-radius: 10px;
+}
+
+.buttons a{
+    text-decoration: none;
+}
+.main-content {
+    height: 60vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally if needed */
+    padding-top: 50px; /* Adjust the top padding as needed */
+}
+
+.profile-image {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+.btn-outline-primary {
+    color: #007bff; /* Blue text color */
+    border: 2px solid #007bff; /* Blue border */
+    background-color: transparent; /* No background */
+}
+.btn-outline-primary:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Blue outline on focus */
+}
+
+.slider{
+    width:90%;
+    height:500px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 20px auto;
+}
+#img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.card-img-top {
+    max-width: 50px; /* Adjust the max-width as needed */
+    max-height: 80px; /* Adjust the max-height as needed */
+    width: auto;
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block;
+}
+.card-img-top-achievement{
+    height: 100px;
+}
+.section-title {
+    padding-top: 80px; /* Adjust based on the height of your fixed navbar */
+    margin-top: -80px; /* Adjust based on the height of your fixed navbar */
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 750px) {
+    .technology_description h2{
+        margin-top: 10rem;
+
+    }
+  
+}
