@@ -56,11 +56,14 @@ html {
     padding-top: 50px; /* Adjust the top padding as needed */
 }
 
-.profile-image {
-    width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
+.about-me-img img {
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 50%; 
+    border-radius: 50%;
+    filter: contrast(1.1) brightness(1.05); /* Adjust contrast and brightness */
+    image-rendering: -webkit-optimize-contrast; /* Ensure better rendering */
+    image-rendering: crisp-edges; /* For non-scaling, pixelated images */
 }
 
 .btn-outline-primary {
@@ -102,12 +105,26 @@ html {
     padding-top: 80px; /* Adjust based on the height of your fixed navbar */
     margin-top: -80px; /* Adjust based on the height of your fixed navbar */
 }
+.blink {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 /* Adjustments for mobile view */
 @media (max-width: 750px) {
+    .about-me-img img {
+        margin-top: 15rem;
+      
+    }
     .technology_description h2{
-        margin-top: 10rem;
+        margin-top: 17rem;
 
     }
+  
   
 }
